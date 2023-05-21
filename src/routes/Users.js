@@ -1,4 +1,5 @@
 import DataUsers from "../Data/DataUsers";
+import BasePage from "../components/BasePage";
 import DataTable from "../components/dataTable";
 
 const User = () => {
@@ -11,10 +12,10 @@ const User = () => {
         });
         return selectedProduct;
       });
-
+    // still in progress :/
     return (
         <>
-            <h1>Halo, kamu sedang berada di page user!!!</h1>
+            <BasePage />
             <DataTable Items={selectedDataUsers}/>
         </>
     )
