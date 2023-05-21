@@ -1,4 +1,5 @@
 import DataProduct from '../Data/DataProduct'
+import BasePage from '../components/BasePage';
 import DataTable from '../components/dataTable';
 
 const Product = () => {
@@ -12,15 +13,16 @@ const Product = () => {
       });
       return selectedProduct;
     });
-    
+    // still in progress :/
     return (
-        <>
-            <h1 className='text-3xl font-bold underline'>Hello World!!!</h1>
-            <DataTable Items={selectedProducts}/>
-
-            
-        </>
+      <>
+        <BasePage />
+        <DataTable Items={selectedProducts}/>
+      </>
     )
 }
+
+
+
 
 export default Product;
